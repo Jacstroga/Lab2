@@ -1,0 +1,195 @@
+<!--Pagina que contiene le menú del restaurante, se redirigirá acá desde el header de cualquier pagina vinculada al sitio-->
+<!DOCTYPE html>
+<html lang="es">
+    <!--Head, parte "Invisible al usuario", codigo HTML que dá indicaciones importantes al navegadro y al sistema SEO.
+    En este caso, codificacion del sitio, ventana de visualizacion, palabras clave que distinguen al sitio,
+    breve descripcion del sitio, Nombre para mostrar en la pestaña, icono para mostrar en la pestaña,
+    y conexion a hoja de estilo CSS, incluye normalize.css v8.0.1 para agregar compatibilidad con diversas plataformas.
+    Igual para todos los HTML que conforman el sitio-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="FOS, Restaurante, Carnes, Pastel de choclo chileno">
+        <meta name="description" content="FOS, es un restaurante de carnes que le ofrece una variedad de platos deliciosos y de calidad">
+        <title>Restaurante FOS</title>
+        <link rel="icon" href="./images/icono.ico">
+        <link rel="stylesheet" href="./css/normalize.css">
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <!--Body o cuerpo del HTML, contiene la informacion relevante para el usuario y funciones a realizar con ella.-->
+    <body>
+        
+        <!--Header o cabecera, panel principal de navegacion por el sitio, para el usuario. En este caso, contiene un logo, enlazado desde
+        la carpeta images, llamado Logo.jpeg y referencia a todos los HTML que conforman el sitio para poder navegar por él.
+        Igual para todos los HTML que conforman el sitio-->
+        <header>
+            <nav>
+                <ul class="menu-principal">
+                    <img id="logo" src="./images/Logo.jpeg">
+                    <li><a href="./index.html">Bienvenido</a></li>
+                    <li><a href="./Menu.html">Menú</a></li>
+                    <li><a href="./reservas.html">Reservaciónes</a></li>
+                    <li><a href="./js.html">JavaScript</a></li>
+                    <li><a href="./ajax.html">AJAX</a></li>
+                </ul>
+            </nav>
+        </header>
+       
+        <!--Main, seccion principal de codigo HTML. En este caso contiene un agran seccion que representa el menú, subdividida en cinco
+        secciones que corresponden con: entradas, platos fuertes, postres y sugerencias del chef. A su vez cada subseccion está dividida
+        en cuatro opciones de menú compuestas, cada una, por una imagen de referencia con su respectivo titulo y nombre alternativo para
+        casos en que la imagen no pueda ser cargada, una etiqueta de tipo H4 con el nombre de la receta y un parrafo con una breve
+        reseña de cada plato-->
+        <main>
+            <section>
+                <div class="container">
+                    <section>
+                        <div class="cards-entrada">
+                            <h3>Entradas</h3>
+                            <div class="card">
+                                <img src="./images/Ensalada.jpeg" alt="Ensalada griega de sandía"  title="Ensalada griega de sandía">>
+                                <h4>Ensalada griega de sandía</h4>
+                                <p>Una ensalada refrescante y colorida, que se hace con trozos de sandía, queso feta, aceitunas negras, cebolla morada, menta y albahaca. Se aliña con aceite de oliva, vinagre balsámico, sal y pimienta.</p>
+                            </div>
+    
+                            <div class="card">
+                                <img src="./images/Ceviche.jpeg" alt="Ceviche de langostinos" title="Ceviche de langostinos">
+                                <h4>Ceviche de langostinos</h4>
+                                <p>Un plato peruano que se hace con langostinos cocidos y cortados en trozos, que se marinan en jugo de limón, cebolla roja, cilantro, ají, sal y pimienta. Se sirve frío con choclo, camote o plátano frito.</p>
+                            </div>    
+    
+                            <div class="card">
+                                <img src="./images/Carpaccio.jpeg" alt="Carpaccio de salmón" title="Carpaccio de salmón">
+                                <h4>Carpaccio de salmón</h4>
+                                <p>Una entrada elegante y sencilla, que se hace con lonchas finas de salmón ahumado, que se disponen en un plato y se aderezan con aceite de oliva, zumo de limón, alcaparras, eneldo y queso parmesano rallado.</p>
+                            </div>
+    
+                            <div class="card">
+                                <img src="./images/Tortilla.jpeg" alt="Tortilla de calabacín y queso" title="Tortilla de calabacín y queso">
+                                <h4>Tortilla de calabacín y queso</h4>
+                                <p>Una receta española que se hace con huevos batidos, calabacín rallado, queso rallado, sal y pimienta. Se cuaja la tortilla en una sartén con un poco de aceite y se sirve caliente o fría, cortada en triángulos.</p>
+                            </div>
+                        </div>
+                            
+                    </section>    
+                    
+                    <section>
+                        <div class="cards-fuerte">
+                            <h3>Fuertes</h3>
+                            <div class="card">
+                                <img src="./images/Magro.jpeg" alt="Magro de cerdo con tomate" title="Magro de cerdo con tomate">
+                                <h4>Magro de cerdo con tomate</h4>
+                                <p>Una receta tradicional y fácil de hacer, que consiste en cocinar trozos de carne de cerdo magra con una salsa de tomate casera y especias. Se puede acompañar con patatas fritas, arroz o pan.</p>
+                            </div>
+            
+                            <div class="card">
+                                <img src="./images/Ternera.jpeg" alt="Ternera en salsa de verduras" title="Ternera en salsa de verduras">
+                                <h4>Ternera en salsa de verduras</h4>
+                                <p>Un plato de siempre, que se prepara dorando la carne de ternera y luego guisándola con un sofrito de cebolla, zanahoria, pimiento y ajo, y un poco de vino blanco. Se puede servir con puré de patatas, pasta o ensalada.</p>
+                            </div>
+            
+                            <div class="card">
+                                <img src="./images/Pastel.jpeg" alt="Pastel de choclo chileno" title="Pastel de choclo chileno">
+                                <h4>Pastel de choclo chileno</h4>
+                                <p>Un plato típico de la cocina chilena, que se elabora con una capa de carne picada de vacuno y pollo, cocinada con cebolla, pasas, aceitunas y huevo duro, y cubierta con una masa de maíz dulce y albahaca. Se hornea hasta que quede dorado y se sirve caliente.</p>
+                            </div>
+            
+                            <div class="card">
+                                <img src="./images/Rabo.jpeg" alt="Rabo de toro a la cordobesa" title="Rabo de toro a la cordobesa">
+                                <h4>Rabo de toro a la cordobesa</h4>
+                                <p>Una receta tradicional de Córdoba, que se hace con trozos de rabo de toro o de vaca, que se saltean con harina y se guisan con cebolla, zanahoria, laurel, tomillo, pimentón, vino tinto y caldo de carne. Se deja cocer a fuego lento hasta que la carne se desprenda del hueso y se sirve con patatas fritas o puré.</p>
+                            </div>
+                        </div>         
+                    </section>
+
+                    <section>
+                        <div class="cards-postres">
+                            <h3>Postres</h3>
+                            <div class="card">
+                                <img src="./images/Flan.jpeg" alt="Flan de huevo casero" title="Flan de huevo casero">
+                                <h4>Flan de huevo casero</h4>
+                                <p>Un clásico que nunca falla, se hace con huevos, leche, azúcar y vainilla, finalmente se cubre con un caramelo líquido. Es un postre suave y ligero.</p>
+                            </div>
+        
+                            <div class="card">
+                                <img src="./images/Tarta.jpeg" alt="Tarta de queso y frutos rojos" title="Tarta de queso y frutos rojos">
+                                <h4>Tarta de queso y frutos rojos</h4>
+                                <p>Una delicia que se prepara con una base de galletas trituradas y mantequilla, un relleno de queso crema, nata, azúcar y gelatina. Se decora con una capa de mermelada de frutos rojos y se refrigera hasta que cuaje. Es un postre cremoso, dulce y ácido a la vez.</p>
+                            </div>
+        
+                            <div class="card">
+                                <img src="./images/Brownie.jpeg" alt="Brownie de chocolate y nueces" title="Brownie de chocolate y nueces">
+                                <h4>Brownie de chocolate y nueces</h4>
+                                <p>Un postre irresistible para los amantes del chocolate. Sue se hace con mantequilla, azúcar, huevos, harina, cacao y nueces picadas. Se hornea hasta que quede jugoso por dentro y crujiente por fuera. Se puede servir con helado de vainilla, nata montada o salsa de chocolate.</p>
+                            </div>
+                            
+                            <div class="card">
+                                <img src="./images/Tiramisu.jpeg" alt="Tiramisú" title="Tiramisú">
+                                <h4>Tiramisú</h4>
+                                <p>Un postre italiano que significa “levántame el ánimo”, se hace con bizcochos de soletilla empapados en café, y una crema de queso mascarpone, huevos, azúcar y licor. Se monta en capas y se espolvorea con cacao en polvo. Se refrigera hasta que quede compacto y se sirve frío.</p>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <section>
+                        <div class="cards-vinos">
+                            <h3>Vinos</h3>
+                            <div class="card">
+                                <img src="./images/Tempranillo.jpeg" alt="Tempranillo" title="Tempranillo">
+                                <h4>Tempranillo</h4>
+                                <p>El tempranillo es una uva tinta autóctona de España, que da vinos afrutados, equilibrados y con buena crianza. Se marida con carne, queso o chocolate.</p>
+                            </div>
+        
+                            <div class="card">
+                                <img src="./images/Cabernet.jpeg" alt="Cabernet Sauvignon" title="Cabernet Sauvignon">
+                                <h4>Cabernet Sauvignon</h4>
+                                <p>El cabernet sauvignon es un vino tinto de gran calidad, cuerpo y taninos. Tiene aromas frutales, florales, herbales o ahumados. Se marida con carne, queso o chocolate.</p>
+                            </div>
+        
+                            <div class="card">
+                                <img src="./images/Blanc.jpeg" alt="Sauvignon Blanc" title="Sauvignon Blanc">
+                                <h4>Sauvignon Blanc</h4>
+                                <p>El sauvignon blanc es una variedad de uva blanca que produce vinos elegantes, afrutados y con buena acidez. Tiene aromas de lima, ruda, espárragos, pomelo y maracuyá. Se adapta a climas fríos y se marida con comidas ligeras.</p>
+                            </div>
+        
+                            <div class="card">
+                                <img src="./images/Rioja.jpeg" alt="Rioja Reserva" title="Rioja Reserva">
+                                <h4>Rioja Reserva</h4>
+                                <p>Vino tinto de alta calidad, elaborado con uvas seleccionadas y envejecido durante al menos tres años, de los cuales al menos uno en barrica de roble. se puede maridar con carnes, guisos, quesos curados y platos de la cocina tradicional española.</p>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <section>
+                        <div class="sugerencias-chef">
+                            <h3>Sugerencias</h3>
+                            <div class="card">
+                                <img src="./images/FOS.jpeg" alt="chef FOS" title="chef FOS">
+                                <h4>Sugerencia del chef FOS</h4>
+                                <p>Para acompañar el magro de cerdo con tomate, puedes elegir un vino tinto joven y afrutado, como un Tempranillo o un Garnacha.</p>
+                            </div>
+        
+                            <div class="card">
+                                <img src="./images/FOS.jpeg" alt="chef FOS" title="chef FOS">
+                                <h4>Sugerencia del chef FOS</h4>
+                                <p>Para acompañar la ternera en salsa de verduras, puedes optar por un vino tinto con cuerpo y taninos, como un Cabernet Sauvignon o un Merlot.</p>
+                            </div>
+        
+                            <div class="card">
+                                <img src="./images/FOS.jpeg" alt="chef FOS" title="chef FOS">
+                                <h4>Sugerencia del chef FOS</h4>
+                                <p>Para acompañar el pastel de choclo chileno, puedes acompañarlo con un vino blanco seco y aromático, como un Sauvignon Blanc o un Chardonnay.</p>
+                            </div>
+        
+                            <div class="card">
+                                <img src="./images/FOS.jpeg" alt="chef FOS" title="chef FOS">
+                                <h4>Sugerencia del chef FOS</h4>
+                                <p>Para acompañar el rabo de toro a la cordobesa, puedes maridarlo con un vino tinto potente y complejo, como un Rioja Reserva o un Malbec.</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>

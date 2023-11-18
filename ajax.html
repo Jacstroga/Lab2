@@ -1,0 +1,50 @@
+<!--Pagina principal, es el archivo que el navegador buscará para iniciar-->
+<!DOCTYPE html>
+<html lang="es">
+    <!--Head, parte "Invisible al usuario", codigo HTML que dá indicaciones importantes al navegadro y al sistema SEO.
+    En este caso, codificacion del sitio, ventana de visualizacion, palabras clave que distinguen al sitio,
+    breve descripcion del sitio, Nombre para mostrar en la pestaña, icono para mostrar en la pestaña,
+    y conexion a hoja de estilo CSS, incluye normalize.css v8.0.1 para agregar compatibilidad con diversas plataformas.
+    Igual para todos los HTML que conforman el sitio-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="FOS, Restaurante, Carnes, Pastel de choclo chileno">
+        <meta name="description" content="FOS, es un restaurante de carnes que le ofrece una variedad de platos deliciosos y de calidad">
+        <title>Restaurante FOS</title>
+        <link rel="icon" href="./images/icono.ico">
+        <link rel="stylesheet" href="./css/normalize.css">
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+  <body>
+    <header>
+        <nav>
+            <ul class="menu-principal">
+                <img id="logo" src="./images/Logo.jpeg">
+                <li><a href="./index.html">Bienvenido</a></li>
+                <li><a href="./Menu.html">Menú</a></li>
+                <li><a href="./reservas.html">Reservaciónes</a></li>
+                <li><a href="./js.html">JavaScript</a></li>
+                <li><a href="./ajax.html">AJAX</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <form action="#"> URL: 
+        <input type="text" id="recurso" />
+        <input type="button" id="enviar" value="Mostrar Contenidos" />
+    </form>
+
+    <div id="principal">
+        <h2>Contenidos del archivo:</h2>   
+        <div id="contenidos"></div>
+        <h2>Estados de la petición:</h2>
+        <div id="codigo"></div>
+        <h2>Cabeceras HTTP de la respuesta del servidor:</h2>
+        <div id="estados"></div>
+        <h2>Código de estado:</h2>
+        <div id="cabeceras"></div>
+    </div>
+    <script src="./js/ajax.js"></script>
+  </body>
+</html>

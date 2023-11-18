@@ -1,0 +1,245 @@
+/* Hoja de estilos CSS, contiene l codigo necesario para dotar de estilo y algunas funcionalidades basicas al sitio web, se enlaza a lo(s)
+archivo(s) HTML que componen el sitio web*/
+
+/*Formatea el cuerpo de todos los HTML vinculados, con la fuente Courier New, como primera opcion, o Courier y monospace  para casos de falla
+de las otras opciones. asigna margenes automaticos y una separacion del margen (padding) de 50 pixelese*/
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: auto;
+    padding: 50px;
+}
+
+
+/* Inicio de la adicion de estilo al header */
+/* Asigna un ancho fijo de 5 unidades de tamaño (con respecto a la caja contenedora) al ID logo. Correspondiente al logo del restaurante*/
+#logo{
+    width: 5em;
+}
+
+nav{
+    max-width: 98%;
+    margin: 10px;
+    background-color: #333;
+    font-size: 20px;
+    margin-top: auto;
+}
+
+.menu-principal{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.menu-principal > li > a{
+    display: block;
+    padding: 35px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.menu-principal > li:hover{
+    background-color: black;
+}
+/* Fin de la adicion de estilo al header */
+
+/* Inicio de la adicion de estilo a la hoja index */
+/* Asigna un ancho fijo de 43 unidades de tamaño (con respecto a la caja contenedora) al ID espacios 1. Correspondiente a un espacio fisico del restaurante*/
+#espacios1{
+    width: 43em;
+}
+
+/* Asigna un ancho fijo de 43 unidades de tamaño (con respecto a la caja contenedora) al ID espacios 2. Correspondiente a un segundo espacio fisico del restaurante*/
+#espacios2{
+    width: 43em;
+}
+/* Fin de la adicion de estilo a la hoja index */
+
+
+/* Inicio de la adicion de estilo a la hoja Menu*/
+.container{
+    width: 100%;
+    max-width: 1200px;
+    height: 430px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+.container .card{
+    width: 330px;
+    height: 430px;
+    border-radius: 8px;
+    box-shadow: 0 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+}
+
+.container .card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.container .card img{
+    width: 330px;
+    height: 220px;
+}
+
+.container .card h4{
+    font-weight: 600;
+}
+
+.container .card .p{
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+}
+/* Fin de la adicion de estilo a la hoja Menu.html*/
+
+
+/* Inicio de la adicion de estilo a la hoja reservas.html*/
+#reservaciones h4{
+    font-size: 30px;
+    margin-top: 80px;
+    text-align: center;
+}
+
+.formulario-reserva{
+    width: 400px;
+    background: #333;
+    padding: 30;
+    margin: auto;
+    border-radius: 4px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+}
+
+.formulario-reserva .controles{
+    margin: 10px;
+    padding: 10px;
+    box-sizing: 10em;
+    width: 90%;
+    background: black;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #c4c6cd;
+    font-size: 18px;
+    color: white;
+}
+
+.formulario-reserva .botones{
+    padding: 10px;
+    margin: 20px;
+    box-sizing: 10em;
+    width: 90%;
+    background: black;
+    border: none;
+    color: white;
+    font-size: 20px;
+}
+
+.formulario-reserva p{
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.formulario-reserva a:hover{
+    color: white;
+    text-decoration: underline;
+}
+/* Fin de la adicion de estilo a la hoja reservas.html*/
+
+/* Incio de la adicion de estilo a la hoja js.html*/
+.bloque-js{
+    max-width: 700px;
+    margin: auto;
+    background-color: #ddd;
+    border: 5px solid #c4c6cd;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.resultado{
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px 0;
+    font-size: 25px;
+}
+
+input{
+    max-width: 90%;
+    margin: 10xp;
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    overflow: auto;
+}
+
+#frase{
+    height: auto;
+    width: 100%;
+}
+
+button{
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border-color: red;
+}
+
+.resultado{
+    overflow: auto;
+}
+/* Fin de la adicion de estilo a la hoja js.html*/
+
+/* Incio de la adicion de estilo a la hoja AJAX.html*/
+h2 {
+    margin-bottom: 10px;
+    font-size: 20px; 
+}
+
+#recurso, #enviar {
+    padding: .3em;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+#enviar{
+    max-width: 250px;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border-color: red;
+}
+
+#principal {
+    width: 100%;
+}
+
+#contenidos, #estados, #cabeceras, #codigo {
+    border: 2px solid gray;
+    background: whitesmoke;
+}
+
+#contenidos {
+    min-height: 400px;
+    max-height: 600px;
+    overflow: scroll;
+}
+
+#estados, #cabeceras, #codigo { 
+    min-height: 200px; 
+    font-size: 1.5em; 
+}
+
+/* Fin de la adicion de estilo a la hoja AJAX.html*/

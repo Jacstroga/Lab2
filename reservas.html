@@ -1,0 +1,64 @@
+<!--Pagina para realizar reservaciones, se redirigirá acá desde el header de cualquier pagina vinculada al sitio-->
+<!DOCTYPE html>
+<html lang="es">
+    <!--Head, parte "Invisible al usuario", codigo HTML que dá indicaciones importantes al navegadro y al sistema SEO.
+    En este caso, codificacion del sitio, ventana de visualizacion, palabras clave que distinguen al sitio,
+    breve descripcion del sitio, Nombre para mostrar en la pestaña, icono para mostrar en la pestaña,
+    y conexion a hoja de estilo CSS, incluye normalize.css v8.0.1 para agregar compatibilidad con diversas plataformas.
+    Igual para todos los HTML que conforman el sitio-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="FOS, Restaurante, Carnes, Pastel de choclo chileno">
+        <meta name="description" content="FOS, es un restaurante de carnes que le ofrece una variedad de platos deliciosos y de calidad">
+        <title>Restaurante FOS</title>
+        <link rel="icon" href="./images/icono.ico">
+        <link rel="stylesheet" href="./css/normalize.css">
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <!--Body o cuerpo del HTML, contiene la informacion relevante para el usuario y funciones a realizar con ella.-->
+    <body>
+        <!--Header o cabecera, panel principal de navegacion por el sitio, para el usuario. En este caso, contiene un logo, enlazado desde
+        la carpeta images, llamado Logo.jpeg y referencia a todos los HTML que conforman el sitio para poder navegar por él.
+        Igual para todos los HTML que conforman el sitio-->
+        <header>
+            <nav>
+                <ul class="menu-principal">
+                    <img id="logo" src="./images/Logo.jpeg">
+                    <li><a href="./index.html">Bienvenido</a></li>
+                    <li><a href="./Menu.html">Menú</a></li>
+                    <li><a href="./reservas.html">Reservaciónes</a></li>
+                    <li><a href="./js.html">JavaScript</a></li>
+                    <li><a href="./ajax.html">AJAX</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!--Main, seccion principal de codigo HTML. En este caso contiene un identificador unico "id=reservaciones" que permite distinguirlo
+        de otros main en el sitio, Un titulo de tipo H4 que indica el nombre del formulario, una seccion que compone el formulario de reservacion
+        contiene seis entradas de datos: nombre, apellido, correo electronico, numero de telefono, fecha de reservacion, area de texto
+        para especificar detalles de la reservacion y un botón para envíar los datos. Cada campo incluye una descripcion visible por el usuario
+        y el formulario puede enviarse con uno o mas campos vacíos. Incluye un texto que advierte terminos y condiciones-->
+        <Main id="reservaciones">
+            <h4>Formulario de reservacion</h4>
+            <section class="formulario-reserva">
+            <form id="f_reserva">
+                <input class="controles" type="text" id="nombre"  name="nombre" placeholder="Ingrese su nombre" required>
+                <input class="controles" type="text" id="apellido"  name="apellido" placeholder="Ingrese su apellido" required>
+                <input class="controles" type="email" id="correo"  name="correo" placeholder="Ingrese su direccion de correo electronico" required>
+                <input class="controles" type="tel" id="telefono"  name="telefono" placeholder="Ingrese su numero de telefono" required>
+                <input class="controles" type="datetime-local" id="fecha"  name="fecha" required>  
+                <input class="controles" type="textarea" id="detalles" name="detalles" placeholder="Describa en detalle su reservacion"></input>
+                <p>Conozco y acepto los <a href="#">terminos y condiciones</p>
+                <input class="botones" type="submit" value="Reservar">
+            </form>
+            </section>
+        </Main>
+        
+        <!--footer o pi de pagina. Muestra un abreve informacion al pie de la página. En este caso, el nombre del restaurante y el año de 
+        creacion del sitio. Igual para todos los HTML que conforman el sitio-->
+        <footer>
+            <p id="footer">Restaurante FOS 2023</p>
+        </footer>
+    </body>
+</html>

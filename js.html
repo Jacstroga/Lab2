@@ -1,0 +1,57 @@
+<!--Pagina que contiene le menú del restaurante, se redirigirá acá desde el header de cualquier pagina vinculada al sitio-->
+<!DOCTYPE html>
+<html lang="es">
+    <!--Head, parte "Invisible al usuario", codigo HTML que dá indicaciones importantes al navegadro y al sistema SEO.
+    En este caso, codificacion del sitio, ventana de visualizacion, palabras clave que distinguen al sitio,
+    breve descripcion del sitio, Nombre para mostrar en la pestaña, icono para mostrar en la pestaña,
+    y conexion a hoja de estilo CSS, incluye normalize.css v8.0.1 para agregar compatibilidad con diversas plataformas.
+    Igual para todos los HTML que conforman el sitio-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="FOS, Restaurante, Carnes, Pastel de choclo chileno">
+        <meta name="description" content="FOS, es un restaurante de carnes que le ofrece una variedad de platos deliciosos y de calidad">
+        <title>Restaurante FOS</title>
+        <link rel="icon" href="./images/icono.ico">
+        <link rel="stylesheet" href="./css/normalize.css">
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+<body>
+    <header>
+        <nav>
+            <ul class="menu-principal">
+                <img id="logo" src="./images/Logo.jpeg">
+                <li><a href="./index.html">Bienvenido</a></li>
+                <li><a href="./Menu.html">Menú</a></li>
+                <li><a href="./reservas.html">Reservaciónes</a></li>
+                <li><a href="./js.html">JavaScript</a></li>
+                <li><a href="./ajax.html">AJAX</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="bloque-js">
+        <h3>¿Es un palindromo?</h3>
+            <input type="text" id="palabra" placeholder="Ingrese un texto"></input>
+            <div class="resultado" id="resultado">--</div>
+    </div>
+
+    <div class="bloque-js">
+        <h3>¿Cuál es mayor?</h3>
+            <input type="text" id="numero1" placeholder="Ingrese a"></input>
+            <input type="text" id="numero2" placeholder="Ingrese b"></input>
+            <button id="verificar" class="verficar" >Verificar</button>
+            <div class="resultado" id="mayor">---</div>
+    </div>
+
+    <div class="bloque-js">
+        <h3>¿La frase contiene vocales?</h3>
+            <textarea id="frase" rows="3" placeholder="Ingrese una frase de almenos dos lineas"></textarea>
+            <button id="buscar" class="verficar" >Buscar</button>
+            <div class="resultado" id="vocales1">---</div>
+            <div class="resultado" id="vocales2">---</div>
+    </div>
+
+    <script src="./js/java1.js"></script>
+</body>
+</html>

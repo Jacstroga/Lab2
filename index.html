@@ -1,0 +1,67 @@
+<!--Pagina principal, es el archivo que el navegador buscará para iniciar-->
+<!DOCTYPE html>
+<html lang="es">
+    <!--Head, parte "Invisible al usuario", codigo HTML que dá indicaciones importantes al navegadro y al sistema SEO.
+    En este caso, codificacion del sitio, ventana de visualizacion, palabras clave que distinguen al sitio,
+    breve descripcion del sitio, Nombre para mostrar en la pestaña, icono para mostrar en la pestaña,
+    y conexion a hoja de estilo CSS, incluye normalize.css v8.0.1 para agregar compatibilidad con diversas plataformas.
+    Igual para todos los HTML que conforman el sitio-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="FOS, Restaurante, Carnes, Pastel de choclo chileno">
+        <meta name="description" content="FOS, es un restaurante de carnes que le ofrece una variedad de platos deliciosos y de calidad">
+        <title>Restaurante FOS</title>
+        <link rel="icon" href="./images/icono.ico">
+        <link rel="stylesheet" href="./css/normalize.css">
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <!--Body o cuerpo del HTML, contiene la informacion relevante para el usuario y funciones a realizar con ella.-->
+    <body>
+        <!--Header o cabecera, panel principal de navegacion por el sitio, para el usuario. En este caso, contiene un logo, enlazado desde
+        la carpeta images, llamado Logo.jpeg y referencia a todos los HTML que conforman el sitio para poder navegar por él.
+        Igual para todos los HTML que conforman el sitio-->
+        <header>
+            <nav>
+                <ul class="menu-principal">
+                    <img id="logo" src="./images/Logo.jpeg">
+                    <li><a href="./index.html">Bienvenido</a></li>
+                    <li><a href="./Menu.html">Menú</a></li>
+                    <li><a href="./reservas.html">Reservaciónes</a></li>
+                    <li><a href="./js.html">JavaScript</a></li>
+                    <li><a href="./ajax.html">AJAX</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <!--Main, seccion principal de codigo HTML. En este caso contiene una etiqueta de tipo H1 con una bienvenida al restaurante.
+        (semanticamente incorrecto, idelamente deberia poner unicamente el nombre del restaurante), tiene una etiqueta de tipo H2
+        con la pregunta ¿quienes somos?, tres etiquetas de tipo H3 con otras preguntas y bajo ellas, parrafos con las respectivas
+        respuestas. Finalmente se incluyen dos imagenes correspondientes a fotos de la planta fisica del restaurante.-->
+        <main>
+            <h1>BIENVENIDO A FOS RESTAURANTE</h1>
+
+            <h2>¿Quienes somos?</h2>
+            <p>Hola, somos un restaurante de carnes que le ofrece una variedad de platos deliciosos y de calidad. Nuestra especialidad es el pastel de choclo chileno, un plato típico de la cocina chilena, que se elabora con una capa de carne picada de vacuno y pollo, cocinada con cebolla, pasas, aceitunas y huevo duro, y cubierta con una masa de maíz dulce y albahaca. Se hornea hasta que quede dorado y se sirve caliente. Es un plato que combina el sabor salado de la carne con el dulzor del maíz, y que le hará sentir como en casa. Le invitamos a probarlo y a disfrutar de nuestra atención y ambiente.</p>
+
+            <h3>¿Qué ofrecemos?</h3>
+            <p>Una variedad de platos deliciosos y de calidad, capaces de satisfacer los paladares y apetitos mas exigentes. Desde el tradicional magro de cerdo con tomate, hasta el exótico currywurst casero, pasando por el típico pastel de choclo chileno y el elegante saltimbocca de ternera. Todos nuestros platos se elaboran con ingredientes frescos, de primera calidad, y se cocinan al punto de su preferencia.</p>
+
+            <h3>Nuestros precios</h3>
+            <p>Le ofrecemos precios razonables y competitivos, planes que se ajustan a sus necesidades, ofertas especiales y descuentos para grupos. Disfrute de nuestra comida sin gastar demasiado. Aceptamos diferentes formas de pago; efectivo, tarjeta o transferencia electronica. Te damos la opción de reservar tu mesa o pedir tu comida para llevar.</p>
+
+            <h3>Nuestros espacios</h3>
+            <p>Brindamos un servicio excelente y un ambiente acogedor. Nuestro amable, profesional y atento personal te hará sentir como en casa. Contamos con espacios amplios, cómodos y limpios. Decorados de forma agradable y personalizable para su evento. Además, la irresistible carta ofrece variedad de bebidas y la mejor selección de postres, para que pueda completar su experiencia gastronómica.</p>
+
+            <img id="espacios1" src="./images/Espacios1.jpeg">
+            <img id="espacios2" src="./images/Espacios2.jpeg">
+
+        </main>
+        
+        <!--footer o pi de pagina. Muestra un abreve informacion al pie de la página. En este caso, el nombre del restaurante y el año de 
+        creacion del sitio. Igual para todos los HTML que conforman el sitio-->
+        <footer>
+            <p id="footer">Restaurante FOS 2023</p>
+        </footer>
+    </body>
+</html>
